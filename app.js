@@ -1,3 +1,30 @@
+var pElOne = document.getElementByID('aOne');
+var pElTwo = document.getElementByID('aTwo');
+var pElThree = document.getElementByID('aThree');
+
+var userName = prompt('Tell me your name.');
+
+var els = [pElOne, pElTwo, pElThree];
+
+var questions = [
+  'Do I have any pets?',
+  'Is math my favorite subject?',
+  'Was I born in Croatia?',
+];
+
+var answers = [
+  'no',
+  'yes',
+  'no',
+];
+
+function game(questions, answers, element) {
+  var userInput = prompt(questions).toLowerCase;
+  if (userInput === answers) {
+
+  }
+}
+
 var counter = 0;
 var userInput = prompt ("What is your name?");
 alert ("Welcome " + userInput +"!");
