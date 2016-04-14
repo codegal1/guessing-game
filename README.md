@@ -11,4 +11,4 @@ JavaScript:
 * Prompt 3 yes/no questions in the guessing-game
 * Add the counter variable to track correct answers
 * Alert the user of the total score
-* Added the guess_ my_ number game
+* Add guess-my-number
