@@ -8,7 +8,11 @@ INTRODUCTION to HTML:
 
 JavaScript:
 
-* Prompt 3 yes/no questions in the guessing-game
-* Add the counter variable to track correct answers
-* Alert the user of the total score
-* Add guess-my-number
+* Need to finish last two number guessing game functions
+* Need to add the counter variable display at the end of script
+* All alerts have been removed
+
+Pair-programming Partner :
+
+* Jeff Torres
+  * [GitHub]()
