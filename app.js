@@ -1,32 +1,35 @@
 var pElOne = document.getElementById('aOne');
 var pElTwo = document.getElementById('aTwo');
 var pElThree = document.getElementById('aThree');
+var pElFour = document.getElementById('aFour');
 
 var userName = prompt('Tell me your name.');
 
 var counter = 0;
 
-var els = [pElOne, pElTwo, pElThree];
+var els = [pElOne, pElTwo, pElThree, pElFour];
 
 var questions = [
   'Do I have any pets?',
   'Is math my favorite subject?',
   'Was I born in Croatia?',
+  'What number am I thinking of?'
 ];
 
 var answers = [
   'no',
   'yes',
   'no',
+  24,
 ];
 
 function game(questions, answers, els) {
-  var userInput = prompt(questions).toLowerCase();
+  var userInput = parseInt(prompt(questions)).toLowerCase();
   console.log(userInput);
   if (userInput === answers) {
     els.textContent = 'You are correct.';
     counter++;
-  } else {
+    } else {
     els.textContent = 'No, that is incorrect.';
   }
 }
@@ -34,7 +37,7 @@ function game(questions, answers, els) {
 game(questions[0], answers[0], els[0]);
 game(questions[1], answers[1], els[1]);
 game(questions[2], answers[2], els[2]);
-
+game(questions[3], answers[3], els[3]);
 // var userInput = prompt ("What is your name?");
 // alert ("Welcome " + userInput +"!");
 // while (counter < 7) {
