@@ -1,8 +1,10 @@
+
 var pElOne = document.getElementById('aOne');
 var pElTwo = document.getElementById('aTwo');
 var pElThree = document.getElementById('aThree');
 var pElFour = document.getElementById('aFour');
 var pElFive = document.getElementById('aFive');
+
 var userName = prompt('Tell me your name.');
 
 var counter = 0;
@@ -34,9 +36,11 @@ var answers = [
      }
    }
 
- for (var i = 0; i < questions.length; i++) {
+for (var i = 0; i < questions.length; i++) {
   game(questions[i], answers[i], els[i]);
 }
+
+
 
 // var userInput = prompt ("What is your name?");
 // alert ("Welcome " + userInput +"!");
