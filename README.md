@@ -8,11 +8,16 @@ INTRODUCTION to HTML:
 
 JavaScript:
 
-* Need to finish last two number guessing game functions
-* Need to add the counter variable display at the end of script
+* Add two more questions to the guessing game functions
+* Add the counter variable display at the end of script
 * All alerts have been removed
 
-Pair-programming Partner :
+CSS:
+
+* Add styling to the html page
+* Add image to the top of the page
+
+Pair-programming Partner:
 
 * Jeff Torres
   * [GitHub]()
