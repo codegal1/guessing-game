@@ -1,0 +1,28 @@
+h2 {
+    color: purple;
+    font-family: sans-serif;
+}
+
+p li {
+    color: purple;
+    font-family: fantasy;
+}
+
+#heading {
+    font-family: fantasy;
+    color: purple;
+
+}
+
+img {
+    height: 180px;
+    width: 1350px;
+}
+
+body {
+    background-color: #c0cfbc;
+}
+
+#top #bio {
+    font-style: oblique;
+}

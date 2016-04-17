@@ -5,7 +5,7 @@ var pElFour = document.getElementById('aFour');
 var pElFive = document.getElementById('aFive');
 var userName = prompt('Tell me your name.');
 
-var counter = 0;
+var counter = 3;
 
 var els = [pElOne, pElTwo, pElThree, pElFour, pElFive];
 
@@ -22,21 +22,49 @@ var answers = [
   'yes',
   'no',
   'no',
-   '24' ];
+   24 ];
 
- function game(questions, answers, els) {
-    var userInput = prompt(questions).toLowerCase();
-    console.log(userInput);
+function game(questions, answers, els) {
+  var userInput = prompt(questions).toLowerCase();
+  console.log(userInput);
+  if (isNaN(parseInt(userInput))) {
     if (userInput === answers) {
-    els.textContent = 'You are correct.';
+       els.textContent = 'You are correct.';
     } else {
-    els.textContent = 'No, that is incorrect.';
-     }
-   }
+       els.textContent = 'No, that is incorrect.';
+    }
+  } else {
+    if (typeof answers === 'number') {
+      console.log('if');
+      userInput = parseInt(userInput);
+      while (userInput !== answers) {
+        console.log('while');
+        if (counter === 0) {
+          break;
+        } else {
+          if (isNaN(userInput)) {
+            userInput = parseInt(prompt('Try guessing again.'));
+            counter--;
+            console.log('userInput');
+          } else if (userInput > answers) {
+            userInput = parseInt(prompt('Too high, guess again.'));
+            counter--;
+            console.log('userInput');
+          } else {
+            userInput = parseInt(prompt('Too low, guess again.'));
+            counter--;
+            console.log('userInput');
+          }
+        }
+      }
+      els.textContent = 'Correct!'
+    }
+  }
+}
 
  for (var i = 0; i < questions.length; i++) {
   game(questions[i], answers[i], els[i]);
-}
+ }
 
 // var userInput = prompt ("What is your name?");
 // alert ("Welcome " + userInput +"!");
