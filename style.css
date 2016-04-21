@@ -1,6 +1,16 @@
+h1 {
+    color: 2ca20b;
+    font-family: cursive;
+}
+
 h2 {
-    color: purple;
-    font-family: sans-serif;
+    color: #54123f;
+    font-family: cursive;
+}
+
+h3 {
+    color: #54123f;
+    font-family: cursive;
 }
 
 p li {
@@ -9,9 +19,14 @@ p li {
 }
 
 #heading {
-    font-family: fantasy;
+    font-family: cursive;
     color: purple;
 
+}
+
+main > img {
+  height: 200px;
+  width: 1330px;
 }
 
 img {
@@ -25,4 +40,22 @@ body {
 
 #top #bio {
     font-style: oblique;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+footer > p {
+  font-family: cursive;
+  color: #541d12
 }
